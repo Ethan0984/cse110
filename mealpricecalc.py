@@ -6,12 +6,12 @@ adultcount = int(input("How many adults are there? "))
 taxrate = float(input("What is the sales tax rate? "))
 subtotal = childmeal * childcount + adultmeal * adultcount
 print()
-print("Subtotal: $", subtotal)
+print(f'Subtotal: ${subtotal:.2f}')
 salestax = taxrate * 0.01 * subtotal
-print("Sales Tax: $", salestax)
+print(f'Sales Tax: ${salestax:.2f}')
 total = subtotal + salestax
-print("Total: $", total)
+print(f'Total: ${total:.2f}')
 print()
 payment = float(input("What is the Payment Amount? "))
 change = payment - total
-print("Change: $", change)
+print(f'Change: ${change:.2f}')
