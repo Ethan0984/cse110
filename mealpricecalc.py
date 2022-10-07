@@ -13,5 +13,11 @@ total = subtotal + salestax
 print(f'Total: ${total:.2f}')
 print()
 payment = float(input("What is the Payment Amount? "))
-change = payment - total
-print(f'Change: ${change:.2f}')
+if payment > total:
+    change = payment - total
+    print(f'Change: {change:.2f}')
+else:
+    change = total - payment
+    payment = float(input(f'You still owe ${change:.2f}, please enter another payment: '))
+    change2 = payment - change
+    print(f'Your change is: ${change2:.2f}')
