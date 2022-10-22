@@ -24,3 +24,7 @@ else:
         loan = True
     else:
         loan = False
+if loan == True:
+    print("You qualify for this loan.")
+else:
+    print("You do not qualify for this loan")
