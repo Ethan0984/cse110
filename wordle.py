@@ -7,7 +7,6 @@ guesses = int
 guesses = 0
 finish = False
 while finish == False:
-    print("Your hint is:")
     guess = input("What is your guess? ").lower()
     if guess != word:
         guesses = guesses + 1
