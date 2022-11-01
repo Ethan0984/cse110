@@ -9,10 +9,10 @@ while playagain == True:
         else:
             print(letter.lower(), end="")
     print()
-    Play = input("Do you want to play again? ")
-    if Play == "yes" or "YES" or "Yes" or "y":
+    Play = input("Do you want to play again? ").lower()
+    if Play == "yes":
         playagain = True
-    elif Play == "no" or "NO" or "n" or "No":
+    elif Play == "no":
         playagain = False
         break
     else:

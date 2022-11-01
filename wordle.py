@@ -1,5 +1,6 @@
 import random
-#words = ('casino')
+#words = ('casino', 'wordle', 'floats', 'clamor', 'string', 'cheers')
+#word = random.choice(words)
 word = "casino"
 print('Welcome to Wordle!')
 print()
